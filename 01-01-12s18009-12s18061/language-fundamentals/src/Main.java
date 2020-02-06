@@ -48,30 +48,33 @@ resultObj = (result == false) || !resultObj;
 System.out.println(name + ", " + gearObject + ", " + resultObj);
 
 //array, collection, and loop
-// membuat objek array list
-ArrayList Antrian = new ArrayList<>();
+ArrayList<Integer> numbers = new ArrayList<Integer>();
 
-// Mengisi Antrian dengan 10 angka
-Antrian.add(1);
-Antrian.add(2);
-Antrian.add(3);
-Antrian.add(4);
-Antrian.add(5);
-Antrian.add(6);
-Antrian.add(7);
-Antrian.add(8);
-Antrian.add(9);
-Antrian.add(10);
+ 
+for (int i = 0; i < 10; ++i) {   
+    for (int j = 0; j < 10 ; ++j) {     
+        numbers.add(i + ' ' );   
+    } 
+    numbers.add(1);
+    numbers.add(2);
+    numbers.add(3);
+    numbers.add(4);
+    numbers.add(5);
+    numbers.add(6);
+    numbers.add(7);
+    numbers.add(8);
+    numbers.add(9);
+    numbers.add(10);
+} 
+ 
+for (int i = 0; i < 10; ++i) {   
+    for (int j = 0; j < 10; ++j) {    
+        
+    System.out.print(numbers.get(i));   
+} 
+System.out.println(); 
+} 
 
-// Menghapus 3 dari Antrian
-Antrian.remove(3);
-
-// Menampilkan daftar antrian
-System.out.println(Antrian);
-
-// Menampilkan banyak antrian
-System.out.println("Yang mengantri adalah sebanyak " + Antrian.size());
-  
  }
 }
 
